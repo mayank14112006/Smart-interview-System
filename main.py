@@ -6,7 +6,11 @@ from textblob import TextBlob
 from rake_nltk import Rake
 import csv
 from pathlib import Path
+
 import nltk
+import os
+
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
 
 nltk.download('punkt_tab')
